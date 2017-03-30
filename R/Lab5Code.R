@@ -30,7 +30,7 @@ proportion <- function(Vec1,Vec2,byrow=TRUE){
   apply(cbind(Vec1,Vec2),MAR,function(x){x[1]/(x[1]+x[2])})
 }
 
-#' @title ia_results
+#' @title Iowa
 #' @description Total Votes for Trump and Clinton in Iowa by county
 #' A data set containing the raw vote totals for Donald Trump and Hillary Clinton for each of Iowa's 100 counties.
 #' @format A data frame with 100 rows and 3 variables
@@ -40,3 +40,4 @@ proportion <- function(Vec1,Vec2,byrow=TRUE){
 #'  \item{Clinton}{Total votes for Hillary Clinton}
 #' }
 #' @source \url{http://www.nytimes.com/elections/results/iowa}
+"Iowa"
