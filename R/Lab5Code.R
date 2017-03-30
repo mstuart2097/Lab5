@@ -1,18 +1,3 @@
-# Hello, world!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
-
 #' @title Proportion
 #' @description This is a function that will take the proportions of an element of one vector comparing to the similar element of another vector
 #' @author Ashish Jain, Matt Stuart, Haiyang Zhang
@@ -29,14 +14,3 @@ proportion <- function(Vec1,Vec2,byrow=TRUE){
   if (byrow==TRUE) {MAR <- 1} else {MAR <- 2}
   apply(cbind(Vec1,Vec2),MAR,function(x){x[1]/(x[1]+x[2])})
 }
-
-#' @title ia_results
-#' @description Total Votes for Trump and Clinton in Iowa by county
-#' A data set containing the raw vote totals for Donald Trump and Hillary Clinton for each of Iowa's 100 counties.
-#' @format A data frame with 100 rows and 3 variables
-#' \describe{
-#'  \item{Vote by county}{County of interest}
-#'  \item{Trump}{Total votes for Donald Trump}
-#'  \item{Clinton}{Total votes for Hillary Clinton}
-#' }
-#' @source \url{http://www.nytimes.com/elections/results/iowa}
