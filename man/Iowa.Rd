@@ -3,7 +3,7 @@
 \docType{data}
 \name{Iowa}
 \alias{Iowa}
-\title{ia_results}
+\title{Iowa}
 \format{A data frame with 100 rows and 3 variables
 \describe{
  \item{Vote by county}{County of interest}
