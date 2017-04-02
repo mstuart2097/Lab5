@@ -6,7 +6,6 @@
 \title{Iowa}
 \format{A data frame with 99 rows and 3 variables
 \describe{
- \item{Vote by county}{County of interest}
  \item{Trump}{Total votes for Donald Trump}
  \item{Clinton}{Total votes for Hillary Clinton}
 }}

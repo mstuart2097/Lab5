@@ -28,7 +28,6 @@ proportion <- function(Vec1,Vec2,byrow=TRUE){
 #' A data set containing the raw vote totals for Donald Trump and Hillary Clinton for each of Iowa's 99 counties.
 #' @format A data frame with 99 rows and 3 variables
 #' \describe{
-#'  \item{Vote by county}{County of interest}
 #'  \item{Trump}{Total votes for Donald Trump}
 #'  \item{Clinton}{Total votes for Hillary Clinton}
 #' }
