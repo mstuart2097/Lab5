@@ -25,12 +25,12 @@ This package consists of a data set containing the raw vote totals for Donald Tr
 ```{r}
 data("Iowa")
 head(Iowa)
-prop<-proportion(Iowa[,2],Iowa[,3])
+prop<-proportion(Iowa[,1],Iowa[,2])
 head(prop)
 ```
 
 The proportions can also be calculated by row by giving arugument `byRow = TRUE`. 
 ```{r}
-prop<-proportion(Iowa[,2],Iowa[,3],byrow = FALSE)
+prop<-proportion(Iowa[,1],Iowa[,2],byrow = FALSE)
 print(prop)
 ```
