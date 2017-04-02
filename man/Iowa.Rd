@@ -4,7 +4,7 @@
 \name{Iowa}
 \alias{Iowa}
 \title{Iowa}
-\format{A data frame with 99 rows and 3 variables
+\format{A data frame with 99 rows and 2 variables
 \describe{
  \item{Trump}{Total votes for Donald Trump}
  \item{Clinton}{Total votes for Hillary Clinton}
