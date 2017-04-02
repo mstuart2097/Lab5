@@ -11,7 +11,7 @@ This R package is used to calculate the proprtions of the two numeric vectors.
 library("Lab5")
 ```
 
-This package consists of a data set containing the raw vote totals for Donald Trump and Hillary Clinton for each of Iowa's 99 counties from 2016 elections. By using the `proportion` function in `Lab5` package we calculated the functions by row (by default).
+This package consists of a data set containing the raw vote totals for Donald Trump and Hillary Clinton for each of Iowa's 99 counties from 2016 elections. By using the `proportion` function in `Lab5` package we calculated the proportions of vote counts.
 
 ```r
 data("Iowa")

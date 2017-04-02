@@ -4,20 +4,18 @@
 \alias{proportion}
 \title{Proportion}
 \usage{
-proportion(Vec1, Vec2, byrow = TRUE)
+proportion(Vec1, Vec2)
 }
 \arguments{
-\item{Vec1}{a Vector}
+\item{Vec1}{a numeric vector}
 
-\item{Vec2}{a Vector}
-
-\item{byrow}{logical.  If \code{TRUE} (default), the proportions will be calculated by row, otherwise by column}
+\item{Vec2}{a numeric vector}
 }
 \value{
-The proportion of the value in the first row or column specified by the user
+The proportion of the values given by the user.
 }
 \description{
-This is a function that will take the proportions of an element of one vector comparing to the similar element of another vector
+This is a function that will take the proportions of an element of one vector comparing to the similar element of another vector.
 }
 \examples{
 proportion(c(1:10),c(11:20))

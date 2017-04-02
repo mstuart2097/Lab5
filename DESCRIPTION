@@ -1,9 +1,9 @@
 Package: Lab5
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Proportion
 Version: 0.1.0
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Authors@R: person("Ashish", "Jain", email = "jain@iastate.edu", role = c("aut", "cre"))
+Description: This is a function that will take the proportions of an element of one vector comparing to the similar element of another vector.
+License: GPL-3
 LazyData: TRUE
 RoxygenNote: 6.0.1

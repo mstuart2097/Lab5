@@ -1,26 +1,20 @@
 
 #' @title Proportion
-#' @description This is a function that will take the proportions of an element of one vector comparing to the similar element of another vector
+#' @description This is a function that will take the proportions of an element of one vector comparing to the similar element of another vector.
 #' @author Ashish Jain, Matt Stuart, Haiyang Zhang
-#' @param Vec1 a Vector
-#' @param Vec2 a Vector
-#' @param byrow logical.  If \code{TRUE} (default), the proportions will be calculated by row, otherwise by column
+#' @param Vec1 a numeric vector
+#' @param Vec2 a numeric vector
 #' @export
-#' @return The proportion of the value in the first row or column specified by the user
+#' @return The proportion of the values given by the user.
 #' @examples
 #' proportion(c(1:10),c(11:20))
 #' proportion(c(1:100),c(101:200))
-proportion <- function(Vec1,Vec2,byrow=TRUE){
+proportion <- function(Vec1,Vec2){
   if(length(Vec1)!=length(Vec2)) stop("Lengths of the two vectors must be the same.")
-  if (byrow==TRUE)
-  {
-    Vec<-cbind(Vec1,Vec2)
-    vector1<-apply(Vec,1,function(x){x[1]/(x[1]+x[2])})
-    vector2<-apply(Vec,1,function(x){x[2]/(x[1]+x[2])})
-    cbind(vector1,vector2)
-  }
-  else
-    {apply(cbind(Vec1,Vec2),2,function(x){x[1]/(x[1]+x[2])})}
+  Vec<-cbind(Vec1,Vec2)
+  vector1<-apply(Vec,1,function(x){x[1]/(x[1]+x[2])})
+  vector2<-apply(Vec,1,function(x){x[2]/(x[1]+x[2])})
+  return(cbind(vector1,vector2))
 }
 
 #' @title Iowa
