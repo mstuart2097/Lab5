@@ -12,8 +12,15 @@
 #' proportion(c(1:100),c(101:200))
 proportion <- function(Vec1,Vec2,byrow=TRUE){
   if(length(Vec1)!=length(Vec2)) stop("Lengths of the two vectors must be the same.")
-  if (byrow==TRUE) {MAR <- 1} else {MAR <- 2}
-  apply(cbind(Vec1,Vec2),MAR,function(x){x[1]/(x[1]+x[2])})
+  if (byrow==TRUE)
+  {
+    Vec<-cbind(Vec1,Vec2)
+    vector1<-apply(Vec,1,function(x){x[1]/(x[1]+x[2])})
+    vector2<-apply(Vec,1,function(x){x[2]/(x[1]+x[2])})
+    cbind(vector1,vector2)
+  }
+  else
+    {apply(cbind(Vec1,Vec2),2,function(x){x[1]/(x[1]+x[2])})}
 }
 
 #' @title Iowa
@@ -25,5 +32,8 @@ proportion <- function(Vec1,Vec2,byrow=TRUE){
 #'  \item{Trump}{Total votes for Donald Trump}
 #'  \item{Clinton}{Total votes for Hillary Clinton}
 #' }
+#' @examples
+#' row.names(Iowa)
+#' sum(Iowa[,1])
 #' @source \url{http://www.nytimes.com/elections/results/iowa}
 "Iowa"

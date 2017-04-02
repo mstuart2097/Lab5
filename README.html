@@ -11,7 +11,7 @@
 
 <meta name="author" content="Ashish Jain, Matt Stuart, Haiyang Zhang" />
 
-<meta name="date" content="2017-03-30" />
+<meta name="date" content="2017-04-01" />
 
 <title>Proportions</title>
 
@@ -119,12 +119,32 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Proportions</h1>
 <h4 class="author"><em>Ashish Jain, Matt Stuart, Haiyang Zhang</em></h4>
-<h4 class="date"><em>March 30, 2017</em></h4>
+<h4 class="date"><em>April 01, 2017</em></h4>
 
 </div>
 
 
-
+<p>This R package is used to calculate the proprtions of the two numeric vectors.</p>
+<pre class="r"><code>library(&quot;Lab5&quot;)</code></pre>
+<p>This package consists of a data set containing the raw vote totals for Donald Trump and Hillary Clinton for each of Iowa’s 99 counties from 2016 elections. By using the <code>proportion</code> function in <code>Lab5</code> package we calculated the functions by row (by default).</p>
+<pre class="r"><code>data(&quot;Iowa&quot;)
+head(Iowa)</code></pre>
+<pre><code>##            Trump Clinton
+## Polk       93492  119804
+## Linn       48390   58935
+## Scott      39149   40440
+## Johnson    21044   50200
+## Black Hawk 27476   32233
+## Story      19458   25709</code></pre>
+<pre class="r"><code>prop&lt;-proportion(Iowa[,1],Iowa[,2])
+head(prop)</code></pre>
+<pre><code>##        vector1   vector2
+## [1,] 0.4383205 0.5616795
+## [2,] 0.4508735 0.5491265
+## [3,] 0.4918896 0.5081104
+## [4,] 0.2953793 0.7046207
+## [5,] 0.4601651 0.5398349
+## [6,] 0.4308012 0.5691988</code></pre>
 
 
 

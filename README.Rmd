@@ -28,9 +28,3 @@ head(Iowa)
 prop<-proportion(Iowa[,1],Iowa[,2])
 head(prop)
 ```
-
-The proportions can also be calculated by row by giving arugument `byRow = TRUE`. 
-```{r}
-prop<-proportion(Iowa[,1],Iowa[,2],byrow = FALSE)
-print(prop)
-```
